@@ -43,11 +43,9 @@
  *
  */
 
-#ifdef HAVE_CONFIG_H
-#include <config.h>
-#endif
+#include "libsrtp/config/config.h"
 
-#include "rdbx.h"
+#include "libsrtp/crypto/rdbx.h"
 
 /*
  * from RFC 3711:

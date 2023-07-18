@@ -42,13 +42,11 @@
  *
  */
 
-#ifdef HAVE_CONFIG_H
-#include <config.h>
-#endif
+#include "libsrtp/config/config.h"
 
-#include "auth.h"
-#include "alloc.h"
-#include "err.h" /* for srtp_debug */
+#include "libsrtp/crypto/auth.h"
+#include "libsrtp/crypto/alloc.h"
+#include "libsrtp/crypto/err.h" /* for srtp_debug */
 #include <openssl/evp.h>
 #include <openssl/hmac.h>
 

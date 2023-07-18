@@ -48,7 +48,7 @@
 #include <stdio.h>    /* for print(), fflush() */
 #include "getopt_s.h" /* for local getopt()    */
 
-#include "srtp_priv.h"
+#include "libsrtp/srtp_priv.h"
 #include "util.h"
 
 #ifdef HAVE_NETINET_IN_H
@@ -3737,7 +3737,7 @@ uint8_t ekt_test_key[16] = {
 };
 // clang-format on
 
-#include "ekt.h"
+#include "libsrtp/ekt.h"
 
 // clang-format off
 srtp_ekt_policy_ctx_t ekt_test_policy = {

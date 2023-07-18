@@ -45,11 +45,11 @@
 #ifndef CRYPTO_KERNEL
 #define CRYPTO_KERNEL
 
-#include "cipher.h"
-#include "auth.h"
-#include "err.h"
-#include "crypto_types.h"
-#include "key.h"
+#include "libsrtp/crypto/cipher.h"
+#include "libsrtp/crypto/auth.h"
+#include "libsrtp/crypto/err.h"
+#include "libsrtp/crypto/crypto_types.h"
+#include "libsrtp/crypto/key.h"
 
 #ifdef __cplusplus
 extern "C" {

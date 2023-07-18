@@ -42,11 +42,9 @@
  *
  */
 
-#ifdef HAVE_CONFIG_H
-#include <config.h>
-#endif
+#include "libsrtp/config/config.h"
 
-#include "key.h"
+#include "libsrtp/crypto/key.h"
 
 #define soft_limit 0x10000
 

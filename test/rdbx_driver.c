@@ -42,9 +42,7 @@
  *
  */
 
-#ifdef HAVE_CONFIG_H
-#include <config.h>
-#endif
+#include "libsrtp/config/config.h"
 
 #include <stdio.h>    /* for printf()          */
 #include "getopt_s.h" /* for local getopt()    */

@@ -44,15 +44,13 @@
  *
  */
 
-#ifdef HAVE_CONFIG_H
-#include <config.h>
-#endif
+#include "libsrtp/config/config.h"
 
-#include "cipher.h"
-#include "cipher_priv.h"
-#include "crypto_types.h"
-#include "err.h"   /* for srtp_debug */
-#include "alloc.h" /* for crypto_alloc(), crypto_free()  */
+#include "libsrtp/crypto/cipher.h"
+#include "libsrtp/crypto/cipher_priv.h"
+#include "libsrtp/crypto/crypto_types.h"
+#include "libsrtp/crypto/err.h"   /* for srtp_debug */
+#include "libsrtp/crypto/alloc.h" /* for crypto_alloc(), crypto_free()  */
 
 srtp_debug_module_t srtp_mod_cipher = {
     0,       /* debugging is off by default */

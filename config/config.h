@@ -4,10 +4,37 @@
  * found in the LICENSE file.
  */
 
-/*
- * This space intentionally left blank.
- *
- * All of the #defines have been moved to BUILD.gn. The libsrtp headers
- * equate "building as a library" with HAS_CONFIG_H, so we need to leave that
- * defined and this file needs to be here.
- */
+#ifndef libsrtp_config_h
+#define libsrtp_config_h
+
+#ifdef __APPLE__
+#include <TargetConditionals.h>
+
+#if TARGET_RT_BIG_ENDIAN && !defined(WORDS_BIGENDIAN)
+#define WORDS_BIGENDIAN
+#endif
+
+#endif
+
+#define HAVE_CONFIG_H
+#define OPENSSL
+#define GCM
+#define HAVE_STDLIB_H
+#define HAVE_STRING_H
+#define HAVE_STDINT_H
+#define HAVE_INTTYPES_H
+#define HAVE_INT16_T
+#define HAVE_INT32_T
+#define HAVE_INT8_T
+#define HAVE_UINT16_T
+#define HAVE_UINT32_T
+#define HAVE_UINT64_T
+#define HAVE_UINT8_T
+#define HAVE_ARPA_INET_H
+#define HAVE_NETINET_IN_H
+#define HAVE_SYS_TYPES_H
+#define HAVE_UNISTD_H
+#define PACKAGE_STRING "860492290f7d1f25e2bd45da6471bfd4cd4d7add"
+#define PACKAGE_VERSION "860492290f7d1f25e2bd45da6471bfd4cd4d7add"
+
+#endif /* libsrtp_config_h */

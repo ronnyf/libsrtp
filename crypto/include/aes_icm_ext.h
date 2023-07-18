@@ -46,8 +46,8 @@
 #ifndef AES_ICM_H
 #define AES_ICM_H
 
-#include "cipher.h"
-#include "datatypes.h"
+#include "libsrtp/crypto/cipher.h"
+#include "libsrtp/crypto/datatypes.h"
 
 #ifdef OPENSSL
 

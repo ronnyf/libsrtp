@@ -42,12 +42,10 @@
  *
  */
 
-#ifdef HAVE_CONFIG_H
-#include <config.h>
-#endif
+#include "libsrtp/config/config.h"
 
-#include "err.h"
-#include "datatypes.h"
+#include "libsrtp/crypto/err.h"
+#include "libsrtp/crypto/datatypes.h"
 #include <string.h>
 
 /* srtp_err_file is the FILE to which errors are reported */

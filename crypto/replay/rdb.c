@@ -43,11 +43,9 @@
  *
  */
 
-#ifdef HAVE_CONFIG_H
-#include <config.h>
-#endif
+#include "libsrtp/config/config.h"
 
-#include "rdb.h"
+#include "libsrtp/crypto/rdb.h"
 
 /*
  * this implementation of a replay database works as follows:

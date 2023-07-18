@@ -44,12 +44,10 @@
  *
  */
 
-#ifdef HAVE_CONFIG_H
-#include <config.h>
-#endif
+#include "libsrtp/config/config.h"
 
-#include "ut_sim.h"
-#include "cipher_priv.h"
+#include "libsrtp/ut_sim.h"
+#include "libsrtp/crypto/cipher_priv.h"
 
 int ut_compar(const void *a, const void *b)
 {

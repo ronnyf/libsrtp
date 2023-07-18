@@ -42,14 +42,11 @@
  *
  */
 
-#ifdef HAVE_CONFIG_H
-#include <config.h>
-#endif
+#include "libsrtp/config/config.h"
 
-#include "alloc.h"
-
-#include "crypto_kernel.h"
-#include "cipher_types.h"
+#include "libsrtp/crypto/alloc.h"
+#include "libsrtp/crypto/crypto_kernel.h"
+#include "libsrtp/crypto/cipher_types.h"
 
 /* the debug module for the crypto_kernel */
 

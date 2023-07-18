@@ -48,16 +48,14 @@
  *
  */
 
-#ifdef HAVE_CONFIG_H
-#include <config.h>
-#endif
+#include "libsrtp/config/config.h"
 
 #include <openssl/evp.h>
-#include "aes_icm_ext.h"
-#include "crypto_types.h"
-#include "err.h" /* for srtp_debug */
-#include "alloc.h"
-#include "cipher_types.h"
+#include "libsrtp/crypto/aes_icm_ext.h"
+#include "libsrtp/crypto/crypto_types.h"
+#include "libsrtp/crypto/err.h" /* for srtp_debug */
+#include "libsrtp/crypto/alloc.h"
+#include "libsrtp/crypto/cipher_types.h"
 
 srtp_debug_module_t srtp_mod_aes_icm = {
     0,             /* debugging is off by default */

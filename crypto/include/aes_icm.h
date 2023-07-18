@@ -47,8 +47,8 @@
 #ifndef AES_ICM_H
 #define AES_ICM_H
 
-#include "aes.h"
-#include "cipher.h"
+#include "libsrtp/crypto/aes.h"
+#include "libsrtp/crypto/cipher.h"
 
 typedef struct {
     v128_t counter;                       /* holds the counter value          */

@@ -47,8 +47,8 @@
 #ifndef NULL_CIPHER_H
 #define NULL_CIPHER_H
 
-#include "datatypes.h"
-#include "cipher.h"
+#include "libsrtp/crypto/datatypes.h"
+#include "libsrtp/crypto/cipher.h"
 
 typedef struct {
     char foo; /* empty, for now */

@@ -43,16 +43,16 @@
  */
 
 // Leave this as the top level import. Ensures the existence of defines
-#include "config.h"
+#include "libsrtp/config/config.h"
 
-#include "srtp_priv.h"
-#include "crypto_types.h"
-#include "err.h"
-#include "ekt.h"   /* for SRTP Encrypted Key Transport */
-#include "alloc.h" /* for srtp_crypto_alloc() */
+#include "libsrtp/srtp_priv.h"
+#include "libsrtp/crypto/crypto_types.h"
+#include "libsrtp/crypto/err.h"
+#include "libsrtp/ekt.h"   /* for SRTP Encrypted Key Transport */
+#include "libsrtp/crypto/alloc.h" /* for srtp_crypto_alloc() */
 
 #ifdef GCM
-#include "aes_gcm.h" /* for AES GCM mode */
+#include "libsrtp/crypto/aes_gcm.h" /* for AES GCM mode */
 #endif
 
 #ifdef OPENSSL_KDF

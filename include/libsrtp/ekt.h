@@ -61,7 +61,7 @@
 #define SRTP_EKT_H
 
 // left in commented out as reminder to not include private headers
-//#include "srtp_priv.h"
+//#include "libsrtp/srtp_priv.h"
 
 #ifdef __cplusplus
 extern "C" {

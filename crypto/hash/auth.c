@@ -43,13 +43,11 @@
  *
  */
 
-#ifdef HAVE_CONFIG_H
-#include <config.h>
-#endif
+#include "libsrtp/config/config.h"
 
-#include "auth.h"
-#include "err.h"       /* for srtp_debug */
-#include "datatypes.h" /* for octet_string */
+#include "libsrtp/crypto/auth.h"
+#include "libsrtp/crypto/err.h"       /* for srtp_debug */
+#include "libsrtp/crypto/datatypes.h" /* for octet_string */
 
 /* the debug module for authentiation */
 

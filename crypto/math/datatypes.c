@@ -43,15 +43,13 @@
  *
  */
 
-#ifdef HAVE_CONFIG_H
-#include <config.h>
-#endif
+#include "libsrtp/config/config.h"
 
 #ifdef OPENSSL
 #include <openssl/crypto.h>
 #endif
 
-#include "datatypes.h"
+#include "libsrtp/crypto/datatypes.h"
 
 static const int8_t octet_weight[256] = {
     0, 1, 1, 2, 1, 2, 2, 3, 1, 2, 2, 3, 2, 3, 3, 4, 1, 2, 2, 3, 2, 3, 3, 4,

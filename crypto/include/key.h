@@ -45,8 +45,8 @@
 #ifndef KEY_H
 #define KEY_H
 
-#include "rdbx.h" /* for srtp_xtd_seq_num_t */
-#include "err.h"
+#include "libsrtp/crypto/rdbx.h" /* for srtp_xtd_seq_num_t */
+#include "libsrtp/crypto/err.h"
 
 #ifdef __cplusplus
 extern "C" {

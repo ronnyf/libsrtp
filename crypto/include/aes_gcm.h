@@ -46,9 +46,9 @@
 #ifndef AES_GCM_H
 #define AES_GCM_H
 
-#include "cipher.h"
-#include "srtp.h"
-#include "datatypes.h"
+#include "libsrtp/crypto/cipher.h"
+#include "libsrtp/srtp.h"
+#include "libsrtp/crypto/datatypes.h"
 
 #ifdef OPENSSL
 

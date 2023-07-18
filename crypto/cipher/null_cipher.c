@@ -44,15 +44,13 @@
  *
  */
 
-#ifdef HAVE_CONFIG_H
-#include <config.h>
-#endif
+#include "libsrtp/config/config.h"
 
-#include "datatypes.h"
-#include "null_cipher.h"
-#include "err.h" /* for srtp_debug */
-#include "alloc.h"
-#include "cipher_types.h"
+#include "libsrtp/crypto/datatypes.h"
+#include "libsrtp/crypto/null_cipher.h"
+#include "libsrtp/crypto/err.h" /* for srtp_debug */
+#include "libsrtp/crypto/alloc.h"
+#include "libsrtp/crypto/cipher_types.h"
 
 static srtp_err_status_t srtp_null_cipher_alloc(srtp_cipher_t **c,
                                                 int key_len,

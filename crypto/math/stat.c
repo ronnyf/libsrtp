@@ -43,11 +43,9 @@
  *
  */
 
-#ifdef HAVE_CONFIG_H
-#include <config.h>
-#endif
+#include "libsrtp/config/config.h"
 
-#include "stat.h"
+#include "libsrtp/crypto/stat.h"
 
 srtp_debug_module_t srtp_mod_stat = {
     0,                  /* debugging is off by default */

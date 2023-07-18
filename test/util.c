@@ -42,7 +42,8 @@
  *
  */
 
-#include "config.h"
+#include "libsrtp/config/config.h"
+
 #include "util.h"
 
 #include <string.h>

@@ -46,8 +46,8 @@
 #ifndef STAT_H
 #define STAT_H
 
-#include "datatypes.h" /* for uint8_t                       */
-#include "err.h"       /* for srtp_err_status_t             */
+#include "libsrtp/crypto/datatypes.h" /* for uint8_t                       */
+#include "libsrtp/crypto/err.h"       /* for srtp_err_status_t             */
 
 #ifdef __cplusplus
 extern "C" {

@@ -45,7 +45,7 @@
 #ifndef NULL_AUTH_H
 #define NULL_AUTH_H
 
-#include "auth.h"
+#include "libsrtp/crypto/auth.h"
 
 #ifdef __cplusplus
 extern "C" {

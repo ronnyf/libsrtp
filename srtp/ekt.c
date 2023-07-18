@@ -42,9 +42,9 @@
  *
  */
 
-#include "srtp_priv.h"
-#include "err.h"
-#include "ekt.h"
+#include "libsrtp/srtp_priv.h"
+#include "libsrtp/crypto/err.h"
+#include "libsrtp/ekt.h"
 
 extern srtp_debug_module_t mod_srtp;
 

@@ -50,9 +50,7 @@
  *
  */
 
-#ifdef HAVE_CONFIG_H
-#include <config.h>
-#endif
+#include "libsrtp/config/config.h"
 
 #include "getopt_s.h" /* for local getopt()  */
 
@@ -84,7 +82,7 @@
 #include <arpa/inet.h>
 #endif
 
-#include "srtp.h"
+#include "libsrtp/srtp.h"
 #include "rtp.h"
 #include "util.h"
 

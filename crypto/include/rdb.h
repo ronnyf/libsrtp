@@ -46,9 +46,9 @@
 #ifndef REPLAY_DB_H
 #define REPLAY_DB_H
 
-#include "integers.h"  /* for uint32_t     */
-#include "datatypes.h" /* for v128_t       */
-#include "err.h"       /* for srtp_err_status_t */
+#include "libsrtp/crypto/integers.h"  /* for uint32_t     */
+#include "libsrtp/crypto/datatypes.h" /* for v128_t       */
+#include "libsrtp/crypto/err.h"       /* for srtp_err_status_t */
 
 #ifdef __cplusplus
 extern "C" {

@@ -47,8 +47,8 @@
 #ifndef RDBX_H
 #define RDBX_H
 
-#include "datatypes.h"
-#include "err.h"
+#include "libsrtp/crypto/datatypes.h"
+#include "libsrtp/crypto/err.h"
 
 #ifdef __cplusplus
 extern "C" {

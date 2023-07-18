@@ -43,19 +43,17 @@
  *
  */
 
-#ifdef HAVE_CONFIG_H
-#include <config.h>
-#endif
+#include "libsrtp/config/config.h"
 
 #include <stdio.h> /* for printf() */
 #include "getopt_s.h"
-#include "cipher.h"
-#include "cipher_priv.h"
+#include "libsrtp/crypto/cipher.h"
+#include "libsrtp/crypto/cipher_priv.h"
 #ifdef GCM
-#include "aes_icm_ext.h"
-#include "aes_gcm.h"
+#include "libsrtp/crypto/aes_icm_ext.h"
+#include "libsrtp/crypto/aes_gcm.h"
 #else
-#include "aes_icm.h"
+#include "libsrtp/crypto/aes_icm.h"
 #endif
 
 #define PRINT_DEBUG 0

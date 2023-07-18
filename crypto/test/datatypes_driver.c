@@ -43,13 +43,11 @@
  *
  */
 
-#ifdef HAVE_CONFIG_H
-#include <config.h>
-#endif
+#include "libsrtp/config/config.h"
 
 #include <stdio.h>  /* for printf() */
 #include <string.h> /* for strlen() */
-#include "datatypes.h"
+#include "libsrtp/crypto/datatypes.h"
 #include "util.h"
 
 void byte_order(void);

@@ -46,17 +46,17 @@
 #define SRTP_PRIV_H
 
 // Leave this as the top level import. Ensures the existence of defines
-#include "config.h"
+#include "libsrtp/config/config.h"
 
-#include "srtp.h"
-#include "rdbx.h"
-#include "rdb.h"
-#include "integers.h"
-#include "cipher.h"
-#include "auth.h"
-#include "aes.h"
-#include "key.h"
-#include "crypto_kernel.h"
+#include "libsrtp/srtp.h"
+#include "libsrtp/crypto/rdbx.h"
+#include "libsrtp/crypto/rdb.h"
+#include "libsrtp/crypto/integers.h"
+#include "libsrtp/crypto/cipher.h"
+#include "libsrtp/crypto/auth.h"
+#include "libsrtp/crypto/aes.h"
+#include "libsrtp/crypto/key.h"
+#include "libsrtp/crypto/crypto_kernel.h"
 
 #ifdef __cplusplus
 extern "C" {
