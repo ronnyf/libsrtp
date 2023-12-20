@@ -45,8 +45,8 @@
 #ifndef SRTP_CIPHER_H
 #define SRTP_CIPHER_H
 
-#include "srtp.h"
-#include "crypto_types.h" /* for values of cipher_type_id_t */
+#include <libsrtp/srtp.h>
+#include <libsrtp/crypto_types.h> /* for values of cipher_type_id_t */
 
 #ifdef __cplusplus
 extern "C" {

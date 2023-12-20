@@ -47,6 +47,7 @@
 #endif
 
 #include "key.h"
+#include <libsrtp/srtp_error.h>
 
 #define soft_limit 0x10000
 

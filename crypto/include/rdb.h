@@ -49,6 +49,7 @@
 #include "integers.h"  /* for uint32_t     */
 #include "datatypes.h" /* for v128_t       */
 #include "err.h"       /* for srtp_err_status_t */
+#include <libsrtp/key_types.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -58,11 +59,6 @@ extern "C" {
  * if the ith least significant bit is one, then the packet index
  * window_end-i is in the database
  */
-
-typedef struct {
-    uint32_t window_start; /* packet index of the first bit in bitmask */
-    v128_t bitmask;
-} srtp_rdb_t;
 
 #define rdb_bits_in_bitmask (8 * sizeof(v128_t))
 

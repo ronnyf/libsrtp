@@ -37,7 +37,7 @@
 #ifndef SRTP_CIHPER_PRIV_H
 #define SRTP_CIHPER_PRIV_H
 
-#include "cipher.h"
+#include <libsrtp/cipher.h>
 
 #ifdef __cplusplus
 extern "C" {

@@ -47,7 +47,7 @@
 
 #include <stdio.h>
 #include <stdarg.h>
-#include "srtp.h"
+#include <libsrtp/srtp.h>
 
 #ifdef __cplusplus
 extern "C" {

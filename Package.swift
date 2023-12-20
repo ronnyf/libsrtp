@@ -36,13 +36,15 @@ let package = Package(
 				"crypto/math/stat.c",
 				"crypto/replay/rdb.c",
 				"crypto/replay/rdbx.c",
-				"srtp/ekt.c",
-				"srtp/srtp.c",
+				"ekt.c",
+				"srtp.c",
 			],
 			publicHeadersPath: "include",
 			cSettings: [
+				.headerSearchPath("include/libsrtp"),
 				.headerSearchPath("crypto/include"),
-				.headerSearchPath("config"),
+				.headerSearchPath("private"),
+				.headerSearchPath("../config"),
 				.define("HAVE_CONFIG_H")
 			]
 		),

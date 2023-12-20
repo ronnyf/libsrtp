@@ -48,11 +48,12 @@
 #include <config.h>
 #endif
 
-#include "cipher.h"
+#include <libsrtp/cipher.h>
+#include <libsrtp/crypto_types.h>
+#include <libsrtp/srtp_error.h>   /* for srtp_debug */
+#include <libsrtp/alloc.h> /* for crypto_alloc(), crypto_free()  */
+#include <libsrtp/datatypes.h>
 #include "cipher_priv.h"
-#include "crypto_types.h"
-#include "err.h"   /* for srtp_debug */
-#include "alloc.h" /* for crypto_alloc(), crypto_free()  */
 
 srtp_debug_module_t srtp_mod_cipher = {
     0,       /* debugging is off by default */

@@ -47,8 +47,9 @@
 #ifndef RDBX_H
 #define RDBX_H
 
-#include "datatypes.h"
-#include "err.h"
+#include <libsrtp/datatypes.h>
+#include <libsrtp/srtp_error.h>
+#include <libsrtp/key_types.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -70,21 +71,6 @@ typedef uint16_t srtp_rollover_counter_t;     /* 16 bit rollover counter */
 
 #define seq_num_median (1 << (8 * sizeof(srtp_sequence_number_t) - 1))
 #define seq_num_max (1 << (8 * sizeof(srtp_sequence_number_t)))
-
-/*
- * An rtp_xtd_seq_num_t is a 64-bit unsigned integer used as an 'extended'
- * sequence number.
- */
-typedef uint64_t srtp_xtd_seq_num_t;
-
-/*
- * An srtp_rdbx_t is a replay database with extended range; it uses an
- * xtd_seq_num_t and a bitmask of recently received indices.
- */
-typedef struct {
-    srtp_xtd_seq_num_t index;
-    bitvector_t bitmask;
-} srtp_rdbx_t;
 
 /*
  * srtp_rdbx_init(rdbx_ptr, ws)

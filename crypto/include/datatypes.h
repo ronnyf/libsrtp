@@ -46,8 +46,9 @@
 #ifndef DATATYPES_H
 #define DATATYPES_H
 
-#include "integers.h" /* definitions of uint32_t, et cetera   */
-#include "alloc.h"
+#include <libsrtp/config.h>
+#include <libsrtp/integers.h> /* definitions of uint32_t, et cetera   */
+#include <libsrtp/alloc.h>
 
 #include <stdarg.h>
 

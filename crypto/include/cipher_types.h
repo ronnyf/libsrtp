@@ -37,8 +37,8 @@
 #ifndef CIHPER_TYPES_H
 #define CIHPER_TYPES_H
 
-#include "cipher.h"
-#include "auth.h"
+#include <libsrtp/cipher.h>
+#include <libsrtp/auth.h>
 
 /*
  * cipher types that can be included in the kernel

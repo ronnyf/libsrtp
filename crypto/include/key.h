@@ -46,19 +46,12 @@
 #define KEY_H
 
 #include "rdbx.h" /* for srtp_xtd_seq_num_t */
-#include "err.h"
+#include <libsrtp/srtp_error.h>
+#include <libsrtp/key_types.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
-
-typedef struct srtp_key_limit_ctx_t *srtp_key_limit_t;
-
-typedef enum {
-    srtp_key_event_normal,
-    srtp_key_event_soft_limit,
-    srtp_key_event_hard_limit
-} srtp_key_event_t;
 
 srtp_err_status_t srtp_key_limit_set(srtp_key_limit_t key,
                                      const srtp_xtd_seq_num_t s);
@@ -69,17 +62,6 @@ srtp_err_status_t srtp_key_limit_clone(srtp_key_limit_t original,
 srtp_err_status_t srtp_key_limit_check(const srtp_key_limit_t key);
 
 srtp_key_event_t srtp_key_limit_update(srtp_key_limit_t key);
-
-typedef enum {
-    srtp_key_state_normal,
-    srtp_key_state_past_soft_limit,
-    srtp_key_state_expired
-} srtp_key_state_t;
-
-typedef struct srtp_key_limit_ctx_t {
-    srtp_xtd_seq_num_t num_left;
-    srtp_key_state_t state;
-} srtp_key_limit_ctx_t;
 
 #ifdef __cplusplus
 }

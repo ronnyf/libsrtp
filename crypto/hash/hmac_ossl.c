@@ -46,9 +46,10 @@
 #include <config.h>
 #endif
 
-#include "auth.h"
-#include "alloc.h"
-#include "err.h" /* for srtp_debug */
+#include <libsrtp/auth.h>
+#include <libsrtp/alloc.h>
+#include <libsrtp/srtp_error.h> /* for srtp_debug */
+#include <libsrtp/datatypes.h>
 #include <openssl/evp.h>
 #include <openssl/hmac.h>
 

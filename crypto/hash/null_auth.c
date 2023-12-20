@@ -49,9 +49,10 @@
 #endif
 
 #include "null_auth.h"
-#include "err.h" /* for srtp_debug */
-#include "alloc.h"
-#include "cipher_types.h"
+#include <libsrtp/srtp_error.h> /* for srtp_debug */
+#include <libsrtp/alloc.h>
+#include <libsrtp/datatypes.h>
+#include <libsrtp/cipher_types.h>
 
 static srtp_err_status_t srtp_null_auth_alloc(srtp_auth_t **a,
                                               int key_len,
